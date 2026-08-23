@@ -1100,7 +1100,9 @@ img {
 
 
 @media (max-width: 600px) {
-
+.hero-background img {
+    object-position: 75% center;
+}
     .site-header {
         padding: 0 22px;
     }
