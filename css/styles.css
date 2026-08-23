@@ -46,7 +46,7 @@ img {
 
 
 /* =========================================================
-   INTRO
+   INTRO / BRAND REVEAL
 ========================================================= */
 
 .intro {
@@ -103,19 +103,42 @@ img {
     margin-bottom: 15px;
 }
 
-.intro-brand h1 {
-    font-size: clamp(70px, 13vw, 180px);
-    line-height: .8;
-    font-weight: 600;
-    letter-spacing: -7px;
+
+/* =========================================================
+   REAL STAR DENTAL INTRO LOGO
+========================================================= */
+
+.intro-logo {
+    display: block;
+    width: min(360px, 65vw);
+    height: auto;
+    margin: 10px auto 0;
+    opacity: 0;
+    transform: scale(.92);
+    animation: introLogoReveal 1.2s 1.6s ease forwards;
 }
 
-.intro-sub {
-    font-size: clamp(18px, 3vw, 40px);
-    letter-spacing: 15px;
-    margin-left: 15px;
-    margin-top: 25px;
+@keyframes introLogoReveal {
+    0% {
+        opacity: 0;
+        transform: scale(.92);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.03);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
+
+
+/* =========================================================
+   INTRO LINE + TAGLINE
+========================================================= */
 
 .intro-line {
     height: 1px;
@@ -130,6 +153,11 @@ img {
     letter-spacing: 3px;
     opacity: .8;
 }
+
+
+/* =========================================================
+   SMILE GLINT
+========================================================= */
 
 .smile-glint {
     position: absolute;
@@ -147,6 +175,11 @@ img {
     z-index: 5;
     animation: glint 1.2s 1.8s ease forwards;
 }
+
+
+/* =========================================================
+   INTRO ANIMATIONS
+========================================================= */
 
 @keyframes introImage {
     to {
@@ -217,7 +250,9 @@ img {
 }
 
 
-/* REAL STAR DENTAL LOGO */
+/* =========================================================
+   REAL STAR DENTAL HEADER LOGO
+========================================================= */
 
 .logo {
     display: flex;
@@ -589,6 +624,8 @@ img {
 
 .service-card {
     position: relative;
+    display: block;
+    width: 100%;
     overflow: hidden;
     min-height: 400px;
     color: white;
@@ -1015,7 +1052,7 @@ img {
 
 
 /* =========================================================
-   REVEAL
+   SCROLL REVEAL
 ========================================================= */
 
 .reveal {
@@ -1054,6 +1091,10 @@ img {
     .logo img {
         width: 125px;
         max-height: 50px;
+    }
+
+    .intro-logo {
+        width: min(300px, 70vw);
     }
 
     .hero-content {
@@ -1122,6 +1163,20 @@ img {
         max-height: 48px;
     }
 
+    .intro-logo {
+        width: min(260px, 72vw);
+    }
+
+    .intro-small {
+        font-size: 10px;
+        letter-spacing: 5px;
+    }
+
+    .intro-brand p {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
     .hero-background img {
         object-position: 75% center;
     }
@@ -1183,15 +1238,40 @@ img {
         margin-top: 25px;
     }
 
+    /* FIX: prevent service-card content from overlapping on mobile */
     .service-grid {
         display: block;
+        width: 100%;
     }
 
     .service-card,
     .service-large,
     .service-wide {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 430px;
         min-height: 430px;
         margin-bottom: 12px;
+    }
+
+    .service-content {
+        left: 25px;
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .service-content h3 {
+        font-size: 28px;
+    }
+
+    .service-content p {
+        max-width: 85%;
+    }
+
+    .service-arrow {
+        width: 44px;
+        height: 44px;
     }
 
     .experience {
@@ -1245,14 +1325,5 @@ img {
     .footer-bottom {
         flex-direction: column;
         gap: 10px;
-    }
-
-    .intro-brand h1 {
-        font-size: 80px;
-    }
-
-    .intro-sub {
-        font-size: 17px;
-        letter-spacing: 8px;
     }
 }
