@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="UTF-8">
@@ -10,12 +9,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Contact | STAR DENTAL</title>
+    <title>Services | STAR DENTAL</title>
 
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
-
 
 <body>
 
@@ -38,11 +36,12 @@
 
     <nav class="desktop-nav">
 
-        <a href="index.html">
-            Home
-        </a>
+        <a href="index.html">Home</a>
 
-        <a href="services.html">
+        <a
+            href="services.html"
+            class="active"
+        >
             Services
         </a>
 
@@ -58,14 +57,19 @@
             Reviews
         </a>
 
-        <a
-            href="contact.html"
-            class="active"
-        >
+        <a href="contact.html">
             Contact
         </a>
 
     </nav>
+
+
+    <a
+        href="contact.html"
+        class="nav-button"
+    >
+        Book Appointment →
+    </a>
 
 </header>
 
@@ -87,22 +91,20 @@
             class="eyebrow"
             style="color:#63a3ff;"
         >
-            CONTACT STAR DENTAL
+            OUR TREATMENTS
         </p>
 
         <h2>
-            Let's talk about
-            <span>your smile.</span>
+            Dentistry designed
+            <span>around you.</span>
         </h2>
 
         <p
             class="statement-copy"
             style="color:rgba(255,255,255,.55);"
         >
-            Ready to take the next step?
-            Contact STAR DENTAL to discuss
-            your dental needs and arrange
-            an appointment.
+            From preventive care to smile transformation,
+            explore the treatments available at STAR DENTAL.
         </p>
 
     </div>
@@ -110,81 +112,127 @@
 </section>
 
 
-<section class="experience">
+<section class="services-section">
 
-    <div class="experience-content">
+    <div
+        class="service-grid"
+        style="grid-template-columns:1fr 1fr;"
+    >
 
-        <p class="eyebrow">
-            BOOK AN APPOINTMENT
-        </p>
+        <article
+            class="service-card service-large"
+            id="aligners"
+        >
 
-        <h2>
-            Start your
-            <span>smile journey.</span>
-        </h2>
+            <div class="service-image aligner-image"></div>
 
-        <div class="experience-list">
+            <div class="service-overlay"></div>
 
-            <div class="experience-item">
+            <div class="service-content">
 
-                <span>PHONE</span>
+                <span class="service-number">
+                    01
+                </span>
 
-                <div>
+                <h3>
+                    STAR Aligners
+                </h3>
 
-                    <h3>
-                        +91 92495 05505
-                    </h3>
-
-                    <p>
-                        Call STAR DENTAL
-                        to enquire or book.
-                    </p>
-
-                </div>
+                <p>
+                    Modern orthodontic treatment
+                    designed for a confident smile.
+                </p>
 
             </div>
 
+        </article>
 
-            <div class="experience-item">
 
-                <span>LOCATIONS</span>
+        <article
+            class="service-card"
+            id="smile-design"
+        >
 
-                <div>
+            <div class="service-image smile-image"></div>
 
-                    <h3>
-                        Multiple locations
-                    </h3>
+            <div class="service-overlay"></div>
 
-                    <p>
-                        Cherthala · Kalapura ·
-                        Kalarcode · Ambalapuzha ·
-                        Nedumudi · Mannancherry
-                    </p>
+            <div class="service-content">
 
-                </div>
+                <span class="service-number">
+                    02
+                </span>
+
+                <h3>
+                    Smile Designing
+                </h3>
+
+                <p>
+                    A personalised approach to
+                    creating a natural-looking smile.
+                </p>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <a
-            href="tel:+919249505505"
-            class="button-primary"
-            style="margin-top:30px;"
+        <article
+            class="service-card"
+            id="implants"
         >
-            Call STAR DENTAL →
-        </a>
 
-    </div>
+            <div class="service-image implant-image"></div>
+
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+
+                <span class="service-number">
+                    03
+                </span>
+
+                <h3>
+                    Dental Implants
+                </h3>
+
+                <p>
+                    Restore function and confidence
+                    with precision implant treatment.
+                </p>
+
+            </div>
+
+        </article>
 
 
-    <div class="experience-image">
-
-        <img
-            src="images/hero-smile.png"
-            alt="STAR DENTAL patient smile"
+        <article
+            class="service-card"
+            id="crowns"
         >
+
+            <div class="service-image crown-image"></div>
+
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+
+                <span class="service-number">
+                    04
+                </span>
+
+                <h3>
+                    Zirconia Crowns
+                </h3>
+
+                <p>
+                    Strong, aesthetic restorations
+                    designed for a natural appearance.
+                </p>
+
+            </div>
+
+        </article>
 
     </div>
 
@@ -196,19 +244,24 @@
     <div class="cta-content">
 
         <p class="eyebrow">
-            STAR DENTAL
+            START YOUR JOURNEY
         </p>
 
         <h2>
-            Your smile
-            <span>starts here.</span>
+            Ready for a
+            <span>better smile?</span>
         </h2>
 
+        <p>
+            Speak with STAR DENTAL about your
+            treatment options.
+        </p>
+
         <a
-            href="tel:+919249505505"
+            href="contact.html"
             class="button-primary"
         >
-            Call Now →
+            Book an Appointment →
         </a>
 
     </div>
@@ -238,5 +291,4 @@
 <script src="js/script.js"></script>
 
 </body>
-
 </html>
